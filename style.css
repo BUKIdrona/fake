@@ -1,0 +1,391 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: yellow;
+    /* background-image: url("./public/images/NSUT.jpeg"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* overflow: hidden; */
+
+}
+
+
+
+.card{
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    /* height: 200px;
+    width: 100%; */
+    border-radius: 5px;
+    /* background-color:#37B7C3; */
+    background-image: linear-gradient( 109.6deg,  rgba(36,45,57,1) 11.2%, rgba(16,37,60,1) 51.2%, rgba(0,0,0,1) 98.6% );
+}
+
+.name_bio{
+    padding: 5px;
+    margin: 0;
+    /* padding: 5px; */
+    width: 100vw;
+    color: white;
+    /* background-color: yellow; */
+}
+
+.card_image{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    height: 300px;
+    width: 200px;
+}
+
+.main-content {
+    position: relative;
+    z-index: 1; /* Ensure content is above the overlay */
+}
+
+/* Example styles for text */
+.main-content h2 {
+    color: white; /* Ensure text is white for contrast */
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.main-content p {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+header {
+    /* background-color: #088395; */
+    background-image: url(./public/images/background_images/IDQ-Corporate-banner.webp);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    opacity: 85%;
+    /* background-color: transparent; */
+     background-color: #493b2a; 
+     /* overflow: hidden; */
+     
+    /* border-radius: 10px; */
+    /* margin: 5px; */
+    /* padding: 5px; */
+     /* */
+     /* background-image: url(https://www.idquantique.com/wp-content/uploads/IDQ-Corporate-banner.png); */
+}
+
+.nav-toggle{
+    display: none;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+    /*  */
+}
+
+.logo a p{
+    color: white;
+    /* list-style-type: none; */
+    margin: 0;
+    padding: 0;
+    text-align: center; 
+}
+.logo1{
+    height: 30px;
+    width: 30px;
+    /* filter: brightness(0) invert(1);  */
+}
+
+.logo2{
+    height: 30px;
+    width: 100px;
+    margin-right: 5px;
+    /* filter: brightness(0) invert(1);  */
+}
+nav ul {
+    font-weight: 700;
+    /* background-color: #333; */
+    color: white;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    padding: 5px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    
+    flex: 1;
+    padding: 20px;
+    margin: 20px;
+    /* background-color: rgb(111, 117, 113); */
+    background-image: linear-gradient( 109.6deg,  rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
+    overflow: hidden;
+}
+
+footer {
+    background-color: #071952;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    opacity: 85%;
+}
+
+.register-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.register-button:hover {
+    background-color: #005bb5;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+
+
+
+/* Dropdown container */
+.dropdown {
+    z-index: 1000;
+    display: inline-block;
+    position: relative;
+}
+
+/* Dropdown button */
+.dropbtn {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #071952;
+    min-width: 160px;
+    z-index: 1;
+    opacity: 85%;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    background-color: #071952;
+    opacity: 85%;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #030e34;
+}
+
+
+.nav-link {
+    text-decoration: none;
+    padding: 5px;
+    position: relative;
+    }
+
+    .nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: red; /* Color of the underline */
+    transition: width 0.3s;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+    width: 100%;
+    }
+
+
+
+
+
+    /* index page */
+
+    .index_main_h2{
+        /* background-color: brown; */
+        z-index: 5;
+        font-size:60px;
+        color: rgb(255, 248, 55);
+    }
+
+    .index_main_p{
+        font-size: 30px;
+        font-weight: 700;
+        color: white;
+    }
+
+    /* section h2{
+        z-index: 100;
+        color: yellow;
+    } */
+
+    .organisers{
+        display: flex;
+        flex-direction: column;
+
+        margin: 5px;
+        /* margin-top: 5px; */
+        padding: 5px;
+        /* top: 400px; */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nsut {
+        padding: 5px;
+        height: 200px;
+        width: 200px;
+    }
+
+    .meit{
+        margin: 5px;
+        height: 150px;
+        width: 500px;
+    }
+
+    
+        .main1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(rgba(4, 9, 30, 0.1), rgba(4, 9, 30, 0.7)), url('./public/images/background_images/b1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+            border-radius: 10px;
+            padding: 5px;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            /* position: fixed; */
+        }
+
+        .main2 {
+            background-image: radial-gradient( circle 382px at 50% 50.2%,  rgba(73,76,212,1) 0.1%, rgba(3,1,50,1) 100.2% );
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+            border-radius: 10px;
+            padding: 5px;
+            margin: 5px;
+            color: white;
+        }
+
+        .main3 {
+            background-image: radial-gradient( circle 382px at 50% 50.2%,  rgba(73,76,212,1) 0.1%, rgba(3,1,50,1) 100.2% );
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+            border-radius: 10px;
+            padding: 5px;
+            margin: 5px;
+            color: white;
+        }
+
+        .main4 {
+            background: linear-gradient(rgba(4, 9, 30, 0.1), rgba(4, 9, 30, 0.7)), url('./public/images/nsut4.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+            border-radius: 10px;
+            padding: 5px;
+            margin: 5px;
+            color: black;
+        }
+
+
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+            overflow: hidden;
+        }
+        
+        .slides {
+            display: none;
+            width: 100%;
+        }
+        
+        .fade {
+            animation: fade 1.5s infinite;
+        }
+        
+        /* @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+        } */
+        
+.container{
+    position: relative;
+}
